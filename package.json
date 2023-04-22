@@ -1,0 +1,19 @@
+{
+  "name": "react-js-learning",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://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@github.com/vipinshrma/react-learning.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vipinshrma/react-learning/issues"
+  },
+  "homepage": "https://github.com/vipinshrma/react-learning#readme"
+}
