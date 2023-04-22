@@ -16,6 +16,7 @@ let App = () => {
     setResult(result.filter(el=>el.id !== id))
   }
   
+  // comment from sambeet
 
   let [isChecked,setIsChecked] = useState(result.completed)
   let checkComplete = (id) => {
