@@ -1,0 +1,44 @@
+[
+    {
+        "id": 0,
+        "name": "All of Us Are Dead",
+        "title": "Netflix Originals",
+        "imgsrc": "https://occ-0-4603-3663.1.nflxso.net/dnm/api/v6/E8vDc_W8CLv7-yMQu8KMEC7Rrr8/AAAABRhGQF3CRyuEMh9MUJL0ufUbCtBx2Yh8RN5rE8XPv2tHSGttoldr_6tnlIt3a7mVMGKUxOzvYx5H60WuZBVFTloPEvmJ.jpg",
+        "link": "https://www.netflix.com/in/title/81237994"
+    },
+    {
+        "id": 1,
+        "name": "Squid Game",
+        "title": "Netflix Originals",
+        "imgsrc": "https://occ-0-4603-3663.1.nflxso.net/dnm/api/v6/E8vDc_W8CLv7-yMQu8KMEC7Rrr8/AAAABZ2sIVr92spXMLzEuOdC4WQgIHRwAfGlIchnnAURwJzIOem2qk2yfbz5amA-nhBMW4n1lzwQukTijvAm_VbgERhQn_jm.jpg?r=002",
+        "link": "https://www.netflix.com/in/title/81040344"
+    },
+    {
+        "id": 2,
+        "name": "Deep",
+        "title": "Hotstar Originals",
+        "imgsrc": "https://occ-0-4603-3663.1.nflxso.net/dnm/api/v6/E8vDc_W8CLv7-yMQu8KMEC7Rrr8/AAAABULanRNjobc2SZqMOseQGW4HApDYw-Wy9FCYBE6ezV64YJ2cYLadIcgJh4DBagXyGocO1EIbrkP81XMan3Tq0p_XZsyh.jpg?r=6e7",
+        "link": "https://www.netflix.com/in/title/81439267"
+    },
+    {
+        "id": 3,
+        "name": "Clickbait",
+        "title": "Amazon Prime Originals",
+        "imgsrc": "https://occ-0-4603-3663.1.nflxso.net/dnm/api/v6/E8vDc_W8CLv7-yMQu8KMEC7Rrr8/AAAABUb23Ke895DW2yun6cB8K_jcFV0h3GJ7Z-YJN-3f8OlHyMFdF9DAD23Amo5VfuPxF11zKg3sKu_xuxt6nlzTK15IsEd6.jpg?r=295",
+        "link": "https://www.netflix.com/in/title/80991754"
+    },
+    {
+        "id": 4,
+        "name": "Alice in Borderland",
+        "title": "Netflix Originals",
+        "imgsrc": "https://occ-0-4603-3663.1.nflxso.net/dnm/api/v6/E8vDc_W8CLv7-yMQu8KMEC7Rrr8/AAAABbV445RzqDGl4iQh9MkqPlTb9DnILUOGWbThonZwB9cLLIVnKWoF5-I3tIRQNL856Cih_ujmzS3twCz8XeDLmU4C5FAB.jpg?r=317",
+        "link": "https://www.netflix.com/in/title/80200575"
+    },
+    {
+        "id": 5,
+        "name": "Hellbound",
+        "title": "Netflix Originals",
+        "imgsrc": "https://occ-0-4603-3663.1.nflxso.net/dnm/api/v6/E8vDc_W8CLv7-yMQu8KMEC7Rrr8/AAAABaloI84yTBD6L0ZTkxGsQjrAdwFmqolCmZeC1gBVYwNR9Dx9Evf7NQ4AyZEYew-v-LhDAFdLpOR1oLSlDtZga7OX7GD1.jpg?r=42d",
+        "link": "https://www.netflix.com/in/title/81256675"
+    }
+]

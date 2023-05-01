@@ -1,0 +1,24 @@
+.taskNotComplete{
+  color: red;
+}
+.taskComplete{
+  color: green;
+}
+
+.completed{
+  background-color: green;
+}
+.not-completed{
+  background-color: white;
+}
+
+.card{
+  padding:2em;
+  border: 1px solid #ccc;
+}
+.grid{
+  display: grid;
+  grid-template-columns:1fr 1fr 1fr;
+  gap:1.6rem;
+  max-width: 120rem;
+}
