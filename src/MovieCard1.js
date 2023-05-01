@@ -1,28 +1,25 @@
-import React, {useState} from 'react'
-import StaticModal from './StaticModal';
+import React, { useState } from 'react'
+import { Button } from 'react-bootstrap'
 
-const MovieCard1 = ({imdbID,Title,Year,Genre,imdbRating,Images}) => {
-  let [modalshow, setModalShow] = useState(false);
+const MovieCard1 = ({ imdbID, Title, Year, Genre, imdbRating, Images,handleEdit }) => {
 
-  let showModalDialog = ()=>{
-    setModalShow(false)
-  }
 
-  return (  
-    <>  
-    <div className='col-md-3'>
+  return (
+    <>
+      <div className='col-md-3'>
         <div className='card'>
-            <img src = {Images[0]}  />
-            <div className='card-body'>
-                <h3 className='card-title'>{Title}</h3>
-                <p className='card-year'>{Year}</p>
-                <p className='card-genre'>{Genre}</p>
-                <p className='card-rating'>{imdbRating}</p>
-                <StaticModal data={{Title,Year,Genre,imdbRating,Images,imdbID}} />
-                {/* <button className='btn btn-primary' onClick={showModalDialog}>Edit</button> */}
-            </div>
+          <img src={Images[0]} />
+          <div className='card-body'>
+            <h3 className='card-title'>{Title}</h3>
+            <p className='card-year'>{Year}</p>
+            <p className='card-genre'>{Genre}</p>
+            <p className='card-rating'>{imdbRating}</p>
+            <Button variant="primary" onClick={()=>handleEdit(imdbID)}>
+              Edit
+            </Button>
+          </div>
         </div>
-    </div>
+      </div>
     </>
 
   )

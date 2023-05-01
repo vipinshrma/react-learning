@@ -1,22 +1,35 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 
-function StaticModal(props) {
-  const [show, setShow] = useState(false);
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
-  const handleSubmit = (e) => {
-    //todo
-    e.preventDefault();
-    console.log('xyz', e.target.elements.id.value);
+// import movieData from "./movieData.json";
+
+
+function StaticModal({data,handleSubmit,show,handleClose}) {
+  const [formData,setFormData] = useState({})
+
+  const handleChange = (e)=>{
+    const {name,value} = e.target;
+    setFormData({...formData,[name]:value})
+
   }
 
+  useEffect(()=>{
+    setFormData(data)
+  },[data])
+
+
+  const onSubmit  = (e)=>{
+    e.preventDefault()
+    handleSubmit(formData);
+    setFormData({})
+    handleClose()
+  }
   return (
     <>
-      <Button variant="primary" onClick={handleShow}>
+      {/* <Button variant="primary" onClick={handleShow}>
         Edit
-      </Button>
+      </Button> */}
 
       <Modal
         show={show}
@@ -27,25 +40,25 @@ function StaticModal(props) {
         <Modal.Header closeButton>
           <Modal.Title>Edit Movie Details</Modal.Title>
         </Modal.Header>
-        <form name="form" onSubmit={(e)=>handleSubmit(e)}>
+        <form name="form" onSubmit={(e)=>onSubmit(e)}>
         <Modal.Body>          
           <div className='row'>
-            <input type="hidden" name="id" className='form-control' value={props.data.imdbID} />
+            {/* <input type="hidden" name="id" className='form-control' disabled value={formData.imdbID} /> */}
             <div className="col-12 mb-3">
               <label className='form-label'>Title</label>
-              <input type="text" name="title" className='form-control' value={props.data.Title} />
+              <input type="text" name="Title" onChange={handleChange} className='form-control' value={formData.Title} />
             </div>
             <div className="col-12 mb-3">
               <label className='form-label'>Year</label>
-              <input type="text" name="year" className='form-control' value={props.data.Year} />
+              <input type="text" name="Year" onChange={handleChange} className='form-control' value={formData.Year} />
             </div>
             <div className="col-12 mb-3">
               <label className='form-label'>Genre</label>
-              <input type="text" name="genre" className='form-control' value={props.data.Genre} />
+              <input type="text" name="Genre" onChange={handleChange} className='form-control' value={formData.Genre} />
             </div>
             <div className="col-12 mb-3">
               <label className='form-label'>IMDB Rating</label>
-              <input type="text" name="rating" className='form-control' value={props.data.imdbRating} />
+              <input type="text" name="imdbRating" onChange={handleChange} className='form-control' value={formData.imdbRating} />
             </div>
           </div>          
         </Modal.Body>
